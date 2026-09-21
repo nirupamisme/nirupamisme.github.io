@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nirupam | Projects</title>
+    <link rel="icon" type="image/x-icon" href="./static/images/my_favicon.ico">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.min.js"></script>
+</head>
+<body>
+
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo"> &lt; / &gt; Nirupam </a>
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="projects.html" class="nav__link active-link">Projects</a>
+                    </li>
+                </ul>
+            </div>
+             <div class="nav__right">
+                <div class="nav__socials">
+                    <a href="#" target="_blank" class="nav__social-link"><i class='bx bxl-github'></i></a>
+                    <a href="mailto:email@example.com" class="nav__social-link"><i class='bx bx-envelope'></i></a>
+                </div>
+                <i class='bx bx-moon change-theme' id="theme-button"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="repos section">
+             <h2 class="section__title">GitHub Repositories</h2>
+             
+             <div class="repo-controls container">
+                <div class="repo-search">
+                    <i class='bx bx-search'></i>
+                    <input type="search" id="repo-search-input" placeholder="Search repositories...">
+                </div>
+
+                <div class="search-options" id="search-options">
+                    <label>
+                        <input type="radio" name="search-type" value="name" checked> By Name
+                    </label>
+                    <label>
+                        <input type="radio" name="search-type" value="fuzzy"> Fuzzy Search
+                    </label>
+                </div>
+
+                <div class="repo__filters" id="repo-filters">
+                    <span class="repo__filter-item active-filter" data-filter="all">All</span>
+                    <span class="repo__filter-item" data-filter="ml">ML Models</span>
+                    <span class="repo__filter-item" data-filter="maths">Maths</span>
+                    <span class="repo__filter-item" data-filter="cfd">CFD</span>
+                    <span class="repo__filter-item" data-filter="turbulence">Turbulence</span>
+                    <span class="repo__filter-item" data-filter="algo">Algorithms</span>
+                </div>
+             </div>
+
+             <div class="repos__container container grid">
+                 <div class="repo-card" data-category="cfd">
+                     <h3 class="repo-card__title">yPlus Calculator</h3>
+                     <p class="repo-card__description">Calculates the first cell size based on the yplus and fluid properties.</p>
+                     <div class="repo-card__footer">
+                         <span class="tag">CFD</span>
+                         <a href="https://github.com/nirupamisme/Yplus-Calculator" class="repo-card__link">View on GitHub <i class='bx bx-right-arrow-alt'></i></a>
+                     </div>
+                 </div>
+                 <div class="repo-card" data-category="cfd">
+                     <h3 class="repo-card__title">2D Lid Driven Cavity Solver</h3>
+                     <p class="repo-card__description">2D Lid driven cavity solver using Lattice Boltzmann Method (LBM).</p>
+                     <div class="repo-card__footer">
+                         <span class="tag">CFD</span>
+                         <a href="https://github.com/nirupamisme/2D_Lid_Driven_Cavity" class="repo-card__link">View on GitHub <i class='bx bx-right-arrow-alt'></i></a>
+                     </div>
+                 </div>
+                 <div class="repo-card" data-category="cfd">
+                     <h3 class="repo-card__title">1D Steady State FVM Laplace Solver</h3>
+                     <p class="repo-card__description">1D Steady Diffusion Heat Equation Using Finite Volume Method.</p>
+                     <div class="repo-card__footer">
+                         <span class="tag">CFD</span>
+                         <a href="https://github.com/nirupamisme/1D_steady_heat_equation_fvm" class="repo-card__link">View on GitHub <i class='bx bx-right-arrow-alt'></i></a>
+                     </div>
+                 </div>
+                 <div class="repo-card" data-category="turbulence">
+                     <h3 class="repo-card__title">Turbulent Channel Flow (RANS)</h3>
+                     <p class="repo-card__description">Turbulent channel flow using different turbulence models (Standard k-ϵ, k-⍵, RNG k-ϵ).</p>
+                     <div class="repo-card__footer">
+                         <span class="tag">Turbulence</span>
+                         <a href="https://github.com/nirupamisme/turbulent_RAS_channel_flow" class="repo-card__link">View on GitHub <i class='bx bx-right-arrow-alt'></i></a>
+                     </div>
+                 </div>
+                 <div class="repo-card" data-category="algo">
+                     <h3 class="repo-card__title">Secant Method</h3>
+                     <p class="repo-card__description">Program for solving equations using secant method.</p>
+                     <div class="repo-card__footer">
+                         <span class="tag">Algorithms</span>
+                         <a href="https://github.com/nirupamisme/secant_method" class="repo-card__link">View on GitHub <i class='bx bx-right-arrow-alt'></i></a>
+                     </div>
+                 </div>
+                 <div class="repo-card" data-category="algo">
+                     <h3 class="repo-card__title">Gauss-Seidel Method</h3>
+                     <p class="repo-card__description">Program for the solution of simultaneous linear equation using gauss-seidel method.</p>
+                     <div class="repo-card__footer">
+                         <span class="tag">Algorithms</span>
+                         <a href="https://github.com/nirupamisme/gauss_seidel_method" class="repo-card__link">View on GitHub <i class='bx bx-right-arrow-alt'></i></a>
+                     </div>
+                 </div>
+                 <div class="repo-card" data-category="algo">
+                     <h3 class="repo-card__title">Newton-Raphson Method</h3>
+                     <p class="repo-card__description">Program for the solving equations using the Newton-Raphson method.</p>
+                     <div class="repo-card__footer">
+                         <span class="tag">Algorithms</span>
+                         <a href="https://github.com/nirupamisme/newton_raphson_method" class="repo-card__link">View on GitHub <i class='bx bx-right-arrow-alt'></i></a>
+                     </div>
+                 </div>
+             </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container container">
+            <p>&copy; 2026 Nirupam. All rights reserved.</p>
+            <p>Built with passion and code.</p>
+        </div>
+    </footer>
+
+    <script src="static/js/script.js"></script>
+</body>
+</html>

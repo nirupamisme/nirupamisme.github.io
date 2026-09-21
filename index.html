@@ -1,76 +1,152 @@
-<!DOCTYPE HTML>
-<!--
-    Identity by HTML5 UP
-    html5up.net | @n33co
-    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Nirupam Pal | Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nirupam | Portfolio</title>
     <link rel="icon" type="image/x-icon" href="./static/images/my_favicon.ico">
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!--[if lte IE 8]><script src="./static/assets/js/html5shiv.js"></script><![endif]-->
-    <link rel="stylesheet" href="./static/assets/css/main.css" />
-    <!--[if lte IE 9]><link rel="stylesheet" href="./static/assets/css/ie9.css" /><![endif]-->
-    <!--[if lte IE 8]><link rel="stylesheet" href="./static/assets/css/ie8.css" /><![endif]-->
-    <noscript><link rel="stylesheet" href="./static/assets/css/noscript.css" /></noscript>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
-<body class="is-loading">
-	<header class="p-3 text-bg-dark">
-		<div class="container">
-			<div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-				<ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-					<li><a href="https://nirupamisme.github.io" class="nav-link px-2 text-secondary">Home</a></li>
-					<li><a href="https://nirupamisme.github.io/about" class="nav-link px-2 text-white">About</a></li>
-					<li><a href="https://nirupamisme.github.io/repository" class="nav-link px-2 text-white">Repository</a></li>
-					<!-- <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
-					<li><a href="#" class="nav-link px-2 text-white">About</a></li> -->
-				</ul>
-			</div>
-		</div>
-	</header>
+<body>
 
-    <!-- Wrapper -->
-    <div id="wrapper">
-        <!-- Main -->
-        <section id="main">
-            <header>
-                <span class="avatar"><img src="./static/images/pexels-philippe-donn-1169754.jpg" alt="Profile Image of Nirupam" height="200" width="200" /></span>
-                <h1>Nirupam Pal</h1>
-                <p>B.Tech (National Institute of Technology, Agartala)</p>
-                <p>Research Scholar (Indian Institute of Technology Madras)</p>
-            </header>
-
-			<!-- Footer -->
-            <footer>
-                <ul class="icons">
-                    <li><a href="https://twitter.com/Nirupam123" class="fa-twitter">Twitter</a></li>
-                    <li><a href="https://www.linkedin.com/in/nirupam-pal-31766a191/" class="fa-linkedin">Linkedin</a></li>
-                    <!-- <li><a href="#" class="fa-facebook">Facebook</a></li> -->
-                    <li><a href="mailto:nirupampal.kls@gmail.com" class="fa-at">E-mail</a></li>
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo"> &lt; / &gt; Nirupam </a>
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link active-link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="projects.html" class="nav__link">Projects</a>
+                    </li>
                 </ul>
-            </footer>
+            </div>
+            <div class="nav__right">
+                <div class="nav__socials">
+                    <a href="https://github.com/nirupamisme" target="_blank" class="nav__social-link"><i class='bx bxl-github'></i></a>
+                    <a href="mailto:nirupampal.kls@gmail.com" class="nav__social-link"><i class='bx bx-envelope'></i></a>
+                </div>
+                <i class='bx bx-moon change-theme' id="theme-button"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="hero section" id="home">
+            <div class="hero__container container grid">
+                <div class="hero__content">
+                    <h1 class="hero__title">
+                        Fluid Dynamics meets <br>
+                        <span class="highlight">Machine Learning</span>
+                    </h1>
+                    <p class="hero__description" style="text-align: justify !important; text-justify: inter-word; hyphens: auto;">
+                        I'm Nirupam, a doctoral researcher at the University of Illinois Chicago specializing in multiphase thermal-fluid transport. I combine flow boiling experiments with automated computer vision pipelines and data-driven methods to measure and model phase-change phenomena. Welcome to my portfolio.
+                    </p>
+                    <div class="hero__buttons">
+                        <a href="projects.html" class="button button--primary">View All Projects</a>
+                        <a href="https://github.com/nirupamisme" target="_blank" class="button button--secondary">GitHub Profile</a>
+                    </div>
+                </div>
+                <div class="hero__image">
+                    <img src="static/images/pexels-philippe-donn-1169754.jpg" alt="Nirupam Profile Photo">
+                </div>
+            </div>
         </section>
 
-        <!-- Footer -->
-        <footer id="footer">
-            <ul class="copyright">
-                <li>&copy;2024 Nirupam Pal</li>
-                <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-            </ul>
-        </footer>
-    </div>
+        <section class="quotes section">
+            <div class="quotes__container container">
+                <div class="quote__item active-quote">
+                    <p class="quote__text">"The best way to predict the future is to invent it."</p>
+                    <cite class="quote__author">- Alan Kay</cite>
+                </div>
+                <div class="quote__item">
+                    <p class="quote__text">"Somewhere, something incredible is waiting to be known."</p>
+                    <cite class="quote__author">- Carl Sagan</cite>
+                </div>
+                <div class="quote__item">
+                    <p class="quote__text">"Any fool can know. The point is to understand."</p>
+                    <cite class="quote__author">- Albert Einstein</cite>
+                </div>
+                <div class="quotes__nav">
+                    <i class='bx bx-chevron-left' id="quote-prev"></i>
+                    <i class='bx bx-chevron-right' id="quote-next"></i>
+                </div>
+            </div>
+        </section>
 
-    <!-- Scripts -->
-    <!--[if lte IE 8]><script src="../static/assets/js/respond.min.js"></script><![endif]-->
-    <script>
-        if ('addEventListener' in window) {
-            window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
-            document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
-        }
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <section class="projects section" id="projects">
+            <h2 class="section__title">Featured Projects</h2>
+            <div class="projects__list">
+
+                <article class="project-spotlight container grid">
+                    <div class="project-spotlight__content">
+                        <h3 class="repo-card__title">Lid Driven Cavity</h3>
+                        <p class="project-spotlight__description">
+                            This is a standard benchmark problem. Lid of the square cavity is moving with a velocity, u = 1 units/s, v = 0 units/s and all the other walls are stationary. The Reynolds No. for the flow is given as, Re = 100. LBM method was used for solving the problem.
+                        </p>
+                        <a href="https://github.com/nirupamisme/2D_Lid_Driven_Cavity" class="repo-card__link">View on GitHub <i class='bx bx-right-arrow-alt'></i></a>
+                    </div>
+                    <div class="project-spotlight__image">
+                        <img src="static/images/contour_plot_velocity_magnitude_51x51_re_100.jpg" alt="lid-driven-cavity">
+                    </div>
+                </article>
+
+                <article class="project-spotlight container grid">
+                    <div class="project-spotlight__image">
+                        <img src="static/images/U_velocity_comparison_plot.png" alt="turbulent-channel-flow">
+                    </div>
+                    <div class="project-spotlight__content">
+                        <h3 class="repo-card__title">Turbulent Channel Flow (RANS)</h3>
+                        <p class="project-spotlight__description">
+                            The fully-developed turbulent channel flow is solved numerically using k−ε, k−ω and RNG k−ε turbulence model and the comparison is plotted. The mean flow is one-dimensional (1D).
+                        </p>
+                        <a href="https://github.com/nirupamisme/turbulent_RAS_channel_flow" class="repo-card__link">View on GitHub <i class='bx bx-right-arrow-alt'></i></a>
+                    </div>
+                </article>
+
+            </div>
+            <div class="projects__see-all">
+                <a href="projects.html" class="button-link">
+                    See All Projects <i class='bx bx-right-arrow-alt'></i>
+                </a>
+            </div>
+        </section>
+
+        <section class="resources section">
+            <h2 class="section__title">Open Source Resources</h2>
+            <div class="resources__container container grid">
+                <a href="https://pytorch.org/" target="_blank" class="resource-card">
+                    <img src="https://cdn.simpleicons.org/pytorch/black" alt="PyTorch Logo" class="resource-card__img">
+                    <h3 class="resource-card__title">PyTorch</h3>
+                </a>
+                <a href="https://www.tensorflow.org/" target="_blank" class="resource-card">
+                    <img src="https://cdn.simpleicons.org/tensorflow/black" alt="TensorFlow Logo" class="resource-card__img">
+                    <h3 class="resource-card__title">TensorFlow</h3>
+                </a>
+                <a href="https://openfoam.com/" target="_blank" class="resource-card">
+                    <img src="./static/images/openfoam.svg" alt="OpenFOAM Logo" class="resource-card__img">
+                    <h3 class="resource-card__title">OpenFOAM</h3>
+                </a>
+                <a href="https://scikit-learn.org/" target="_blank" class="resource-card">
+                    <img src="https://cdn.simpleicons.org/scikitlearn/black" alt="Scikit-learn Logo" class="resource-card__img">
+                    <h3 class="resource-card__title">Scikit-learn</h3>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container container">
+            <p>&copy; 2026 Nirupam. All rights reserved.</p>
+            <p>Built with passion and code.</p>
+        </div>
+    </footer>
+
+    <script src="static/js/script.js"></script>
 </body>
 </html>
