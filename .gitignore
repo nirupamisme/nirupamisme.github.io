@@ -1,0 +1,45 @@
+# macOS System Files
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Thumbnails and Cache
+Thumbs.db
+ehthumbs.db
+
+# Editor & IDE artifacts
+# Neovim / Vim
+*.swp
+*.swo
+*~
+*.un~
+.netrwhist
+
+# VS Code (if used)
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Local Environment & Secrets
+.env
+.env.local
+*.local
+
+# Node / Static site build output (if using bundlers, tailwind, etc.)
+node_modules/
+dist/
+build/
+.cache/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Staging & Backup directories
+*(old)/
+*~
